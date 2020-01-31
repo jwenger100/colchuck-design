@@ -5,6 +5,10 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
+import HowItWorks1 from '../../static/images/productHowItWorks1.svg'
+import HowItWorks2 from '../../static/images/productHowItWorks2.svg'
+import HowItWorks3 from '../../static/images/productHowItWorks3.svg'
+import ProductCurvyLines from '../../static/images/productCurvyLines.png';
 
 const styles = theme => ({
   root: {
@@ -58,7 +62,7 @@ function ProductHowItWorks(props) {
     <section className={classes.root}>
       <Container className={classes.container}>
         <img
-          src="/static/themes/onepirate/productCurvyLines.png"
+          src={ProductCurvyLines}
           className={classes.curvyLines}
           alt="curvy lines"
         />
@@ -71,7 +75,7 @@ function ProductHowItWorks(props) {
               <div className={classes.item}>
                 <div className={classes.number}>1.</div>
                 <img
-                  src="/static/themes/onepirate/productHowItWorks1.svg"
+                  src={HowItWorks1}
                   alt="suitcase"
                   className={classes.image}
                 />
@@ -84,7 +88,7 @@ function ProductHowItWorks(props) {
               <div className={classes.item}>
                 <div className={classes.number}>2.</div>
                 <img
-                  src="/static/themes/onepirate/productHowItWorks2.svg"
+                  src={HowItWorks2}
                   alt="graph"
                   className={classes.image}
                 />
@@ -97,7 +101,7 @@ function ProductHowItWorks(props) {
               <div className={classes.item}>
                 <div className={classes.number}>3.</div>
                 <img
-                  src="/static/themes/onepirate/productHowItWorks3.svg"
+                  src={HowItWorks3}
                   alt="clock"
                   className={classes.image}
                 />

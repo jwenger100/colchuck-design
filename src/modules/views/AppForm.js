@@ -4,11 +4,12 @@ import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '../components/Paper';
+import CurvyLinesBackground from '../../static/images/appCurvyLines.png'
 
 const styles = theme => ({
   root: {
     display: 'flex',
-    backgroundImage: 'url(/static/onepirate/appCurvyLines.png)',
+    backgroundImage: 'url(../../static/images/appCurvyLines.png)',
     backgroundRepeat: 'no-repeat',
   },
   paper: {

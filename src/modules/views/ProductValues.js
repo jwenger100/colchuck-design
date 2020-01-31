@@ -4,6 +4,10 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
+import ProductCurvyLines from '../../static/images/productCurvyLines.png';
+import ProductValues1 from '../../static/images/productValues1.svg';
+import ProductValues2 from '../../static/images/productValues2.svg';
+import ProductValues3 from '../../static/images/productValues3.svg';
 
 const styles = theme => ({
   root: {
@@ -44,7 +48,7 @@ function ProductValues(props) {
     <section className={classes.root}>
       <Container className={classes.container}>
         <img
-          src="/static/themes/onepirate/productCurvyLines.png"
+          src={ProductCurvyLines}
           className={classes.curvyLines}
           alt="curvy lines"
         />
@@ -53,7 +57,7 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="/static/themes/onepirate/productValues1.svg"
+                src={ProductValues1}
                 alt="suitcase"
               />
               <Typography variant="h6" className={classes.title}>
@@ -69,7 +73,7 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="/static/themes/onepirate/productValues2.svg"
+                src={ProductValues2}
                 alt="graph"
               />
               <Typography variant="h6" className={classes.title}>
@@ -85,7 +89,7 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="/static/themes/onepirate/productValues3.svg"
+                src={ProductValues3}
                 alt="clock"
               />
               <Typography variant="h6" className={classes.title}>
