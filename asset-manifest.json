@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5df7d988.chunk.css",
+    "main.js": "/static/js/main.cf6e6476.chunk.js",
+    "main.js.map": "/static/js/main.cf6e6476.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8ce6def8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8ce6def8.js.map",
+    "static/js/2.298d2f1c.chunk.js": "/static/js/2.298d2f1c.chunk.js",
+    "static/js/2.298d2f1c.chunk.js.map": "/static/js/2.298d2f1c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f5a335e760622aed2599858cfe5310ed.js": "/precache-manifest.f5a335e760622aed2599858cfe5310ed.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.5df7d988.chunk.css.map": "/static/css/main.5df7d988.chunk.css.map",
+    "static/js/2.298d2f1c.chunk.js.LICENSE.txt": "/static/js/2.298d2f1c.chunk.js.LICENSE.txt",
+    "static/media/productBuoy.svg": "/static/media/productBuoy.4bba4fca.svg",
+    "static/media/productCurvyLines.png": "/static/media/productCurvyLines.3a1df6c1.png",
+    "static/media/productHowItWorks1.svg": "/static/media/productHowItWorks1.a0b2ccce.svg",
+    "static/media/productHowItWorks2.svg": "/static/media/productHowItWorks2.138c5412.svg",
+    "static/media/productHowItWorks3.svg": "/static/media/productHowItWorks3.8ca21716.svg",
+    "static/media/productValues1.svg": "/static/media/productValues1.5317c43c.svg",
+    "static/media/productValues2.svg": "/static/media/productValues2.b8e7bdd2.svg",
+    "static/media/productValues3.svg": "/static/media/productValues3.40b63126.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8ce6def8.js",
+    "static/js/2.298d2f1c.chunk.js",
+    "static/css/main.5df7d988.chunk.css",
+    "static/js/main.cf6e6476.chunk.js"
+  ]
+}
