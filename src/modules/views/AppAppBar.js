@@ -5,6 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
 import AppBar from '../components/AppBar';
 import Toolbar, { styles as toolbarStyles } from '../components/Toolbar';
+import { green } from '@material-ui/core/colors';
 
 const styles = theme => ({
   title: {
@@ -33,6 +34,9 @@ const styles = theme => ({
   linkSecondary: {
     color: theme.palette.secondary.main,
   },
+  heading:{
+    flex: 'auto'
+  }
 });
 
 function AppAppBar(props) {
@@ -47,30 +51,11 @@ function AppAppBar(props) {
             variant="h6"
             underline="none"
             color="inherit"
-            className={classes.title}
+            className={classes.heading}
             href="/premium-themes/onepirate/"
           >
-            {'onepirate'}
+            {'Colchuck Design'}
           </Link>
-          <div className={classes.right}>
-            <Link
-              color="inherit"
-              variant="h6"
-              underline="none"
-              className={classes.rightLink}
-              href="/premium-themes/onepirate/sign-in/"
-            >
-              {'Sign In'}
-            </Link>
-            <Link
-              variant="h6"
-              underline="none"
-              className={clsx(classes.rightLink, classes.linkSecondary)}
-              href="/premium-themes/onepirate/sign-up/"
-            >
-              {'Sign Up'}
-            </Link>
-          </div>
         </Toolbar>
       </AppBar>
       <div className={classes.placeholder} />
