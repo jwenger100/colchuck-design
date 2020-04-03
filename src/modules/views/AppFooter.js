@@ -14,9 +14,9 @@ function Copyright() {
   return (
     <React.Fragment>
       {'© '}
-      <Link color="inherit" href="https://material-ui.com/">
+      <span color="inherit">
         ColchuckDesign.com
-      </Link>{' '}
+      </span>{' '}
       {new Date().getFullYear()}
     </React.Fragment>
   );
@@ -25,7 +25,8 @@ function Copyright() {
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
-    backgroundColor: theme.palette.secondary.dark,
+    backgroundColor: '#045de9;',
+    backgroundImage: 'linear-gradient(315deg, #045de9 0%, #09c6f9 74%);'
   },
   container: {
     marginTop: theme.spacing(8),
