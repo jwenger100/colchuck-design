@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import ProductHeroWonder from '../../static/images/productHeroWonder.png';
-import ProductHeroArrowDown from '../../static/images/productHeroArrowDown.png';
+// import ProductHeroArrowDown from '../../static/images/productHeroArrowDown.png';
 
 const styles = theme => ({
   root: {
@@ -24,16 +24,6 @@ const styles = theme => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-  },
-  backdrop: {
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    top: 0,
-    bottom: 0,
-    backgroundColor: theme.palette.common.black,
-    opacity: 0.5,
-    zIndex: -1,
   },
   background: {
     position: 'absolute',
@@ -64,15 +54,14 @@ function ProductHeroLayout(props) {
           height="80"
         />
         {children}
-        <div className={classes.backdrop} />
         <div className={clsx(classes.background, backgroundClassName)} />
-        <img
+        {/* <img
           className={classes.arrowDown}
           src={ProductHeroArrowDown}
           height="16"
           width="12"
           alt="arrow down"
-        />
+        /> */}
       </Container>
     </section>
   );

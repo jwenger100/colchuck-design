@@ -4,7 +4,8 @@ import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '../components/Typography';
-import ProductBuoy from '../../static/images/productBuoy.svg'
+import FacebookIcon from '@material-ui/icons/Facebook';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 const styles = theme => ({
   root: {
@@ -15,7 +16,7 @@ const styles = theme => ({
     marginBottom: theme.spacing(9),
   },
   button: {
-    border: '4px solid currentColor',
+    border: '4px solid #149c38',
     borderRadius: 0,
     height: 'auto',
     padding: theme.spacing(2, 5),
@@ -27,6 +28,9 @@ const styles = theme => ({
   buoy: {
     width: 60,
   },
+  color: {
+    color: '#149c38'
+  },
 });
 
 function ProductSmokingHero(props) {
@@ -35,14 +39,20 @@ function ProductSmokingHero(props) {
   return (
     <Container className={classes.root} component="section">
       <Button className={classes.button}>
-        <Typography variant="h4" component="span">
-          Got any questions? Need help?
+      <a href="mailto:colchuckdesign@gmail.com?Subject=Let's%20Chat!">
+        <Typography variant="h4" component="span" className={classes.color}>
+          {'Got any questions? Contact Us!'}<br></br>
+          {'Click here.'}
         </Typography>
+      </a>
       </Button>
       <Typography variant="subtitle1" className={classes.link}>
         We are here to help. Get in touch!
       </Typography>
-      <img src={ProductBuoy} className={classes.buoy} alt="buoy" />
+      <div>
+        <FacebookIcon style={{ fontSize: 50 }}></FacebookIcon>
+        <LinkedInIcon style={{ fontSize: 50 }}></LinkedInIcon>
+      </div>
     </Container>
   );
 }
