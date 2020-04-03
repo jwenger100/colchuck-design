@@ -16,8 +16,8 @@ const styles = theme => ({
   root: {
     display: 'flex',
     overflow: 'hidden',
-    backgroundColor: '#149c38',
-    backgroundImage: 'linear-gradient(315deg, #3bb78f 0%, #0bab64 74%)'
+    backgroundColor: theme.palette.secondary.light,
+    // backgroundImage: 'linear-gradient(315deg, #3bb78f 0%, #0bab64 74%)'
   },
   container: {
     marginTop: theme.spacing(15),

@@ -14,6 +14,7 @@ const styles = theme => ({
     alignItems: 'center',
     marginTop: theme.spacing(9),
     marginBottom: theme.spacing(9),
+    // backgroundColor: theme.palette.warning.main,
   },
   button: {
     border: '4px solid #149c38',
@@ -49,10 +50,6 @@ function ProductSmokingHero(props) {
       <Typography variant="subtitle1" className={classes.link}>
         We are here to help. Get in touch!
       </Typography>
-      <div>
-        <FacebookIcon style={{ fontSize: 50 }}></FacebookIcon>
-        <LinkedInIcon style={{ fontSize: 50 }}></LinkedInIcon>
-      </div>
     </Container>
   );
 }
