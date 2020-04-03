@@ -13,6 +13,7 @@ const styles = theme => ({
     backgroundImage: `url(${backgroundImage})`,
     backgroundColor: '#7fc7d9', // Average color of the background image.
     backgroundPosition: 'center',
+    backgroundSize: 'cover',
   },
   button: {
     minWidth: 200,
@@ -23,9 +24,11 @@ const styles = theme => ({
     [theme.breakpoints.up('sm')]: {
       marginTop: theme.spacing(10),
     },
+    fontWeight: 400,
   },
   more: {
     marginTop: theme.spacing(2),
+    fontWeight: 400,
   },
 });
 
@@ -44,8 +47,8 @@ function ProductHero(props) {
         Colchuck Design is a comprehensive development and web design company specializing custom applications,
         responsive web design, hosting and maintenance. 
       </Typography>
-      <Typography variant="body2" color="inherit" className={classes.more}>
-        Discover the experience
+      <Typography variant="h5" color="inherit" className={classes.more}>
+        Discover the experience!
       </Typography>
     </ProductHeroLayout>
   );

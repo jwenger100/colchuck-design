@@ -5,15 +5,19 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
 import ProductCurvyLines from '../../static/images/productCurvyLines.png';
-import ProductValues1 from '../../static/images/productValues1.svg';
-import ProductValues2 from '../../static/images/productValues2.svg';
-import ProductValues3 from '../../static/images/productValues3.svg';
+import AppsIcon from '@material-ui/icons/Apps';
+import ImportantDevicesIcon from '@material-ui/icons/ImportantDevices';
+import WebIcon from '@material-ui/icons/Web';
+import DnsIcon from '@material-ui/icons/Dns';
+import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
+import SearchIcon from '@material-ui/icons/Search';
 
 const styles = theme => ({
   root: {
     display: 'flex',
     overflow: 'hidden',
-    backgroundColor: theme.palette.secondary.light,
+    backgroundColor: '#149c38',
+    backgroundImage: 'linear-gradient(315deg, #3bb78f 0%, #0bab64 74%)'
   },
   container: {
     marginTop: theme.spacing(15),
@@ -33,12 +37,16 @@ const styles = theme => ({
   title: {
     marginTop: theme.spacing(5),
     marginBottom: theme.spacing(5),
+    textAlign: 'center',
   },
   curvyLines: {
     pointerEvents: 'none',
     position: 'absolute',
     top: -180,
   },
+  centerAlign: {
+    textAlign: 'center'
+  }
 });
 
 function ProductValues(props) {
@@ -55,49 +63,67 @@ function ProductValues(props) {
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
-              <img
-                className={classes.image}
-                src={ProductValues1}
-                alt="suitcase"
-              />
+              <AppsIcon style={{ fontSize: 100 }}></AppsIcon>
               <Typography variant="h6" className={classes.title}>
-                Custom Applications
+                Custom Web Applications
               </Typography>
-              <Typography variant="h5">
-                {'Blah Blah'}
-                {'Blah blha'}
+              <Typography variant="h5" className={classes.centerAlign}>
+                {'We are a professional web application development company, we prodvide top notch custom web development services.'}
               </Typography>
             </div>
           </Grid>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
-              <img
-                className={classes.image}
-                src={ProductValues2}
-                alt="graph"
-              />
+            <ImportantDevicesIcon style={{ fontSize: 100 }}></ImportantDevicesIcon>
               <Typography variant="h6" className={classes.title}>
                 Responsive Web Design
               </Typography>
-              <Typography variant="h5">
-                {'Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… '}
-                {'your Sundays will not be alike.'}
+              <Typography variant="h5" className={classes.centerAlign}>
+                {'We provide complete mobile, tablet, and desktop support for your website, so it looks perfect on every device.'}
               </Typography>
             </div>
           </Grid>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
-              <img
-                className={classes.image}
-                src={ProductValues3}
-                alt="clock"
-              />
+            <WebIcon style={{ fontSize: 100 }}></WebIcon>
               <Typography variant="h6" className={classes.title}>
                 Hosting and Maintenance
               </Typography>
-              <Typography variant="h5">
-                {'By registering, you will access specially negotiated rates '}
-                {'that you will not find anywhere else.'}
+              <Typography variant="h5" className={classes.centerAlign}>
+                {'We make hosting websites for our clients\' easy and painless. We also provide maintenace so that every site is performing at the highest level.'}
+              </Typography>
+            </div>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <div className={classes.item}>
+            <DnsIcon style={{ fontSize: 100 }}></DnsIcon>
+              <Typography variant="h6" className={classes.title}>
+                Robust Web Services
+              </Typography>
+              <Typography variant="h5" className={classes.centerAlign}>
+                {'We are skilled at building scalabe web services on a variety of cloud platforms.'}
+              </Typography>
+            </div>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <div className={classes.item}>
+            <SearchIcon style={{ fontSize: 100 }}></SearchIcon>
+              <Typography variant="h6" className={classes.title}>
+                SEO
+              </Typography>
+              <Typography variant="h5" className={classes.centerAlign}>
+                {'Our custom websites come with custom SEO to suit the indiviual needs of each client.'}
+              </Typography>
+            </div>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <div className={classes.item}>
+            <EmojiPeopleIcon style={{ fontSize: 100 }}></EmojiPeopleIcon>
+              <Typography variant="h6" className={classes.title}>
+                Customer Focused
+              </Typography>
+              <Typography variant="h5" className={classes.centerAlign}>
+                {'We are 100% customer focused and transaprent. We aim to deliver the optimum solution that fits your business needs.'}
               </Typography>
             </div>
           </Grid>
